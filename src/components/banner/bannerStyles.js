@@ -27,7 +27,7 @@ export const BannerWrap = styled.div`
     }
 
     .line {
-        width: 100px;
+        width: 70px;
         height: 4px;
         border-radius: 3px;
         // border: 2px solid white;
