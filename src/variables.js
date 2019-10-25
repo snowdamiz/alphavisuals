@@ -2,10 +2,13 @@ export const colors = {
     white: '#ffffff'
 }
   
-//   export const fonts = {
-//     primary: `'Titillium Web', sans-serif;`,
-//     secondary: `'Source Sans Pro', sans-serif;`
-//   }
+  export const fonts = {
+    primary: `'Roboto', sans-serif;`,
+    test1: `'Lobster', cursive;`,
+    test2: `'Marck Script', cursive;`,
+    test3: `'Damion', cursive;`,
+    test4: `'Galada', crusive;`,
+  }
   
 export const media = {
     modern: '@media(min-width: 1920px)',

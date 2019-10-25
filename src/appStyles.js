@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { media } from './variables';
 
 export const AppWrap = styled.div`
-    border: 1px solid blue;
+    // border: 1px solid blue;
     width: 100%;
 
     ${media.largeTb} {

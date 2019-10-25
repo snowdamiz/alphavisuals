@@ -5,7 +5,7 @@ import { media, colors } from '../../variables';
 
 export const HeaderWrap = styled.div`
     width: 100%;
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 10px 0;
     display: flex;
     flex-flow: column nowrap;
@@ -16,13 +16,13 @@ export const HeaderWrap = styled.div`
 
     ${media.largeTb} {
         height: 100%;
-        width: 44%;
+        width: 46%;
         background: url('${Nav}');
         background-color: transparent;
         background-repeat: no-repeat;
         background-size: cover; 
-        -webkit-filter: drop-shadow( 3px 3px 10px rgba(0, 0, 0, .7));
-        filter: drop-shadow( 3px 3px 10px rgba(0, 0, 0, .7));
+        -webkit-filter: drop-shadow( 4px 6px 12px rgba(0, 0, 0, .7));
+        filter: drop-shadow( 4px 6px 12px rgba(0, 0, 0, .7));
     }
 
     .shadow {
@@ -32,6 +32,10 @@ export const HeaderWrap = styled.div`
 
     .logoBox {
         margin: 40px 0 0 50px;
+
+        ${media.desktop} {
+            margin: 80px 0 0 80px;
+        }
 
         .logo {
             width: 150px;
