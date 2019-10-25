@@ -22,7 +22,8 @@ export const BannerWrap = styled.div`
         color: white;
         font-family: ${fonts.test1};
         font-size: 100px;
-        text-shadow: 0 5px 40px black;
+        text-shadow: 0 0 30px black;
+        margin-top: 60px;
     }
 
     .line {
@@ -32,6 +33,7 @@ export const BannerWrap = styled.div`
         // border: 2px solid white;
         background-color: white;
         margin-top: 40px;
+        box-shadow: 0 0 26px black;
     }
 
     h2 {
