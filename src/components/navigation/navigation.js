@@ -13,7 +13,7 @@ function Navigation() {
         <>
         <NavWrap>
             <div className="logo">
-                <img src={Logo} />
+                {/* <img src={Logo} /> */}
                 {/* <div className="socials">
                     <img src={fb} />
                     <img src={ig} />

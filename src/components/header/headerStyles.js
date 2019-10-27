@@ -11,7 +11,6 @@ export const HeaderWrap = styled.div`
     flex-flow: column nowrap;
     // align-items: center;
     background-color: #00949F;
-    position: relative;
     z-index: 1;
 
     ${media.largeTb} {

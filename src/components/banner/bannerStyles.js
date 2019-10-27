@@ -17,6 +17,7 @@ export const BannerWrap = styled.div`
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    // margin-top: -80px;
 
     h1 {
         color: white;
@@ -66,6 +67,14 @@ export const BannerWrap = styled.div`
             margin: 0 10px 0 10px;
             -webkit-filter: drop-shadow( 0 3px 6px rgba(0, 0, 0, .7));
             filter: drop-shadow( 0 3px 6px rgba(0, 0, 0, .7));
+            opacity: 0.6;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+                
+            }
         }
+
     }
 `;
