@@ -10,6 +10,7 @@ export const NavWrap = styled.div`
     position: absolute;
     align-items: center;
     z-index: 2;
+    padding: 15px 15px 0 15px;
     // border :1px solid blue;
 
     ${media.largeMb} { padding: 16px 16px 0 16px; }
