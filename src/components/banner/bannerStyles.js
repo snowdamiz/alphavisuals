@@ -22,9 +22,17 @@ export const BannerWrap = styled.div`
     h1 {
         color: white;
         font-family: ${fonts.test1};
-        font-size: 100px;
+        font-size: 60px;
         text-shadow: 0 0 30px black;
         margin-top: 60px;
+
+        ${media.mobile} { font-size: 62px; }
+        ${media.largeMb} { font-size: 65px; }
+        ${media.tablet} { font-size: 68px; }
+        ${media.largeTb} { font-size: 80px;}
+        ${media.desktop} { font-size: 86px; }
+        ${media.largeDt} { font-size: 90px; }
+        ${media.modern} { font-size: 100px; }
     }
 
     .line {
@@ -38,12 +46,37 @@ export const BannerWrap = styled.div`
     }
 
     h2 {
-        margin-top: 54px;
+        margin-top: 28px;
         // margin-left: 60px;
         color: white;
         font-family: ${fonts.test4};
-        font-size: 42px;
+        font-size: 34px;
         text-shadow: 0 0 30px black;
+
+        ${media.tablet} {
+            font-size: 38px;
+            margin-top: 32px;
+        }
+
+        ${media.largeTb} {
+            font-size: 42px;
+            margin-top: 42px;
+        }
+
+        ${media.desktop} {
+            font-size: 46px;
+            margin-top: 48px;
+        }
+
+        ${media.largeDt} {
+            font-size: 48px;
+            margin-top: 56px;
+        }
+
+        ${media.modern} { 
+            font-size: 52px;
+            margin-top: 62px;
+        }
     }
 
     .arrow {
