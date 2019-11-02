@@ -13,7 +13,7 @@ export const ServicesWrap = styled.div`
         width: 90%;
         // box-shadow: 2px 2px 10px #717171;
         padding: 20px;
-        margin-top: 60px;
+        margin-top: 80px;
         margin-bottom: 20px;
 
         .service_content {
@@ -37,7 +37,6 @@ export const ServicesWrap = styled.div`
             .description {
                 font-size: 17px;
                 font-family: ${fonts.primary};
-                margin-top: 26px;
 
                 span {
                     font-weight: 500;
@@ -59,7 +58,7 @@ export const ServicesWrap = styled.div`
             .price {
                 font-size: 17px;
                 font-family: ${fonts.primary};
-                // margin-top: 20px;
+                margin-top: 30px;
 
                 span {
                     font-weight: 500;
@@ -76,7 +75,7 @@ export const ServicesWrap = styled.div`
                 border: 2px solid #414141;
                 background-color: transparent;
                 padding: 8px 12px;
-                margin-top: 30px;
+                margin-top: 20px;
                 font-size: 16px;
                 font-family: ${fonts.primary};
                 font-weight: 500;
