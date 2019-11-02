@@ -6,9 +6,7 @@ import { media, fonts } from '../../variables';
 
 export const BannerWrap = styled.div`
     width: 100%;
-    height: 100%;
-    // border: 1px solid green;
-    position: absolute;
+    height: 100vh;
     background: url('${Banner}');
     background-position: center; 
     background-size: cover;
