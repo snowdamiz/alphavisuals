@@ -14,6 +14,9 @@ export const ServicesWrap = styled.div`
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        &:nth-of-type(3) {
+            margin-bottom: 90px;
+        }
 
         ${media.largeMb} {
             width: 480px;
