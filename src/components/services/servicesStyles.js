@@ -3,8 +3,8 @@ import { fonts, colors, media } from '../../variables';
 
 export const ServicesWrap = styled.div`
     width: 100%;
-    border: 1px solid white;
-    height: 50px;
+    // border: 1px solid red;
+    // height: 50px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
