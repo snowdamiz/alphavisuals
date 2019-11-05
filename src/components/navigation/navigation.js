@@ -1,28 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import { NavWrap } from './navigationStyles';
-import Logo from '../../assets/logo.png';
-import fb from '../../assets/fb.svg';
-import tw from '../../assets/tw.svg';
-import ig from '../../assets/ig.svg';
-import pt from '../../assets/pt.svg';
 
 function Navigation() {
+    const [nav, setNav] = useState(false);
+
     return (
-        <>
-        <NavWrap>
-            <div className="logo">
-                {/* <img src={Logo} /> */}
-                {/* <div className="socials">
-                    <img src={fb} />
-                    <img src={ig} />
-                    <img src={pt} />
-                    <img src={tw} />
-                </div> */}
-            </div>
-            
-            <div className="touch_nav">
+        <NavWrap id="home">
+            <div className="logo"></div>
+            <div className="touch_nav" onClick={() => setNav(!nav)}>
                 <div className="bars">
                     <div></div>
                     <div></div>
@@ -30,14 +17,18 @@ function Navigation() {
                 </div>
                 <p>Menu</p>
             </div>
+
+            {nav ? (
             <div className="nav">
-                {/* <Link to="/">Home</Link>
-                <Link to="/">Services</Link>
-                <Link to="/">Gallery</Link>
-                <Link to="/">Contact</Link> */}
+                <Link smooth to="/#home">Home</Link>
+                <Link smooth to="/#services">Services</Link>
+                <Link smooth to="/#gallery">Gallery</Link>
+                <Link smooth to="/#contact">Contact</Link>
             </div>
+            ): (
+                null
+            )}
         </NavWrap>
-        </>
     )
 }
 

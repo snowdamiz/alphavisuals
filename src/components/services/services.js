@@ -3,7 +3,7 @@ import { ServicesWrap } from './servicesStyles';
 
 function Services () {
     return (
-        <ServicesWrap>
+        <ServicesWrap id="services">
             <div className="service_sec">
                 <div className="service">
                     <div className="service_content">

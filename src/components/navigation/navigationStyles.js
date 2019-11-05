@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media, colors } from '../../variables';
+import { media, colors, fonts } from '../../variables';
 
 import Logo from '../../assets/logo.png';
 
@@ -21,74 +21,50 @@ export const NavWrap = styled.div`
     ${media.modern} { padding: 40px 40px 0 40px; }
 
     .logo {
-            display: flex;
-            align-items: center;
-            flex-flow: row nowrap;
-            background: url('${Logo}');
-            background-size: cover;
-            width: 60px;
-            height: 54px;
-            // margin: 14px 0 0 14px;
+        display: flex;
+        align-items: center;
+        flex-flow: row nowrap;
+        background: url('${Logo}');
+        background-size: cover;
+        width: 60px;
+        height: 54px;
+        // margin: 14px 0 0 14px;
 
-            ${media.largeMb} {
-                // margin: 16px 0 0 16px;
-                width: 64px;
-                height: 56px;
-            }
+        ${media.largeMb} {
+            // margin: 16px 0 0 16px;
+            width: 64px;
+            height: 56px;
+        }
 
-            ${media.tablet} {
-                // margin: 18px 0 0 18px;
-                width: 68px;
-                height: 60px;
-            }
+        ${media.tablet} {
+            // margin: 18px 0 0 18px;
+            width: 68px;
+            height: 60px;
+        }
 
-            ${media.largeTb} {
-                // margin: 20px 0 0 20px;
-                width: 70px;
-                height: 62px;
-            }
+        ${media.largeTb} {
+            // margin: 20px 0 0 20px;
+            width: 70px;
+            height: 62px;
+        }
 
-            ${media.desktop} {
-                // margin: 22px 0 0 22px;
-                width: 74px;
-                height: 65px;
-            }
+        ${media.desktop} {
+            // margin: 22px 0 0 22px;
+            width: 74px;
+            height: 65px;
+        }
 
-            ${media.largeDt} {
-                // margin: 26px 0 0 26px;
-                width: 80px;
-                height: 70px;
-            }
+        ${media.largeDt} {
+            // margin: 26px 0 0 26px;
+            width: 80px;
+            height: 70px;
+        }
 
-            ${media.modern} {
-                // margin: 40px 0 0 40px;
-                width: 100px;
-                height: 88px;
-            }
-
-        // img {
-        //     width: 94px;
-        //     height: 82px;
-        //     -webkit-filter: drop-shadow( 0 0 20px rgba(0, 0, 0, .7));
-        //     filter: drop-shadow( 0 0 20px rgba(0, 0, 0, .7));
-    
-        //     ${media.desktop} {
-        //     }
-        // }
-    
-        // .socials {
-        //     display: flex;
-        //     flex-flow: row nowrap;
-        //     // margin-top: 40px;
-
-        //     img {
-        //         width: 26px;
-        //         height: 26px;
-        //         margin-left: 26px;
-        //         -webkit-filter: drop-shadow( 0 3px 6px rgba(0, 0, 0, .7));
-        //         filter: drop-shadow( 0 3px 6px rgba(0, 0, 0, .7));
-        //     }
-        // }
+        ${media.modern} {
+            // margin: 40px 0 0 40px;
+            width: 100px;
+            height: 88px;
+        }
     }
 
     .touch_nav {
@@ -102,6 +78,7 @@ export const NavWrap = styled.div`
         height: 44px;
         // margin: 0 10px 0 0;
         box-shadow: 0 0 30px black;
+        cursor: pointer;
 
         ${media.tablet} {
             height: 46px;
@@ -150,11 +127,56 @@ export const NavWrap = styled.div`
     .nav {
         padding: 12px 0;
         position: absolute;
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 20px;
+        align-items: center;
+        right: 15px;
+        top: 76px;
+        width: 120px;
+
+        ${media.tablet} {
+            border-radius: 26px;
+            right: 20px;
+            top: 84px;
+        }
+
+        ${media.largeTb} {
+            border-radius: 24px;
+            top: 90px;
+            right: 24px;
+        }   
+
+        ${media.desktop} {
+            border-radius: 26px;
+            top: 96px;
+            right: 26px;
+            width: 130px;
+        }
+        
+        ${media.largeDt} {
+            top: 104px;
+            right: 30px;
+        }
+
+        ${media.modern} {
+            top: 118px;
+            right: 40px;
+        }
 
         a{
             text-decoration: none;
-            margin-right: 26px;
+            // margin-right: 26px;
             color: black;
+            font-family: ${fonts.primary};
+            font-weight: 500;
+            padding: 4px 0;
+
+             &:hover {
+                 color: ${colors.primary};
+             }
         }
     }
 `;

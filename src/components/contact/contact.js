@@ -3,7 +3,7 @@ import { ContactWrap } from './contactStyles';
 
 function Contact () {
     return (
-        <ContactWrap>
+        <ContactWrap id="contact">
             <h1>Have Questions?</h1>
 
             <form>

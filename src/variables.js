@@ -1,5 +1,6 @@
 export const colors = {
-    white: '#ffffff'
+    white: '#ffffff',
+    primary: '#00CFB2',
 }
   
   export const fonts = {
