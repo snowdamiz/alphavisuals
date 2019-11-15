@@ -17,10 +17,10 @@ export const GalleryWrap = styled.div`
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding: 50px 30px;
+        padding: 60px 20px;
         // border: 1px solid orange;
 
-        ${media.tablet} { padding: 60px 0; }
+        ${media.tablet} { padding: 80px 0; }
         ${media.largeTb} { padding: 90px 0; }        
         ${media.desktop} {
             max-width: 1000px;
