@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { fonts, colors, media } from '../../variables';
 
+import placeholder from '../../assets/placeholder.jpg';
+
 export const GalleryWrap = styled.div`
     width: 100%;
     box-shadow: 0px 0px 20px #CACACA;
@@ -30,18 +32,36 @@ export const GalleryWrap = styled.div`
     .img_border {
         width: 150px;
         height: 150px;
-        border: 1px solid red;
+        // border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         ${media.mobile} {
             width: 180px;
             height: 180px;
-            border: 1px solid blue;
+            // border: 1px solid blue;
         }
 
         ${media.tablet} {
             width: 250px;
             height: 250px;
-            border: 1px solid green;
+            // border: 1px solid green;
+        }
+
+        .img {
+            width: 90%;
+            height: 90%;
+            // border: 1px solid blue;
+            cursor: pointer;
+            background: url('${placeholder}');
+            background-size: cover;
+
+            &:hover {
+                width: 100%;
+                height: 100%;
+                box-shadow: 0 4px 10px #E2E2E2;
+            }
         }
     }
 `;
