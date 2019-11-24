@@ -22,6 +22,7 @@ function Navigation() {
             <div className="nav">
                 <Link smooth to="/#home">Home</Link>
                 <Link smooth to="/#services">Services</Link>
+                <Link smooth to="/#ourteam">Our Team</Link>
                 <Link smooth to="/#gallery">Gallery</Link>
                 <Link smooth to="/#contact">Contact</Link>
             </div>

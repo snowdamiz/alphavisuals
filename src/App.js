@@ -8,6 +8,7 @@ import Banner from './components/banner/banner';
 import Services from './components/services/services';
 import Contact from './components/contact/contact';
 import Gallery from './components/gallery/gallery';
+import Ourteam from './components/ourteam/ourteam';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" component={Navigation} id="home" />
       <Route exact path="/" component={Banner} />
       <Route exact path="/" component={Services} id="services" />
+      <Route exact path="/" component={Ourteam} id="ourteam" />
       <Route exact path="/" component={Gallery} id="gallery" />
       <Route exact path="/" component={Contact} id="contact" />
     </AppWrap>
