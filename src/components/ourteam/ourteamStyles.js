@@ -4,13 +4,11 @@ import { colors, fonts, media } from '../../variables';
 
 export const OurteamWrap = styled.div`
     width: 100%;
-    // box-shadow: 0px 0px 20px #CACACA;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: colum nowrap;
     background-color: ${colors.primary};
-    // border: 1px solid red;
 
     .inner {
         width: 100%;
@@ -21,27 +19,17 @@ export const OurteamWrap = styled.div`
         justify-content: center;
         align-items: center;
 
-        // ${media.largeMb} { padding: 90px 0; }
-        // ${media.tablet} { padding: 120px 0; }
-        // ${media.desktop} { padding: 150px 0; }
-
         .section {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
             width: 100%;
-            // border: 1px solid red;
             padding: 0 42px;
             height: 100vh;
-            // margin-bottom: 80px;
 
-            ${media.largeMb} {
-                width: 480px;
-                // margin-bottom: 85px;
-            }
+            ${media.largeMb} { width: 480px; }
 
-            // ${media.largeTb} { margin-bottom: 120px; }
             ${media.desktop} {
                 flex-flow: row nowrap;
                 justify-content: space-around;
@@ -101,15 +89,15 @@ export const OurteamWrap = styled.div`
                     font-weight: 400;
                     
                     ${media.desktop} { 
-                        width: 500px;
+                        width: 450px;
                         line-height: 26px;
                     }
-                }
-    
-                .hidden {
-                    display: none;
-                    ${media.desktop} {
-                        display: flex;
+
+                    .hidden {
+                        display: none;
+                        ${media.desktop} {
+                            display: flex;
+                        }
                     }
                 }
     
@@ -129,7 +117,7 @@ export const OurteamWrap = styled.div`
                         color: ${colors.black};
                     }
     
-                    ${media.desktop} { display: none; }
+                    // ${media.desktop} { display: none; }
                 }
     
                 .profileNav {
@@ -162,43 +150,49 @@ export const OurteamWrap = styled.div`
                     flex-flow: row wrap;
                     align-items: center;
                     align-content: center;
-                    // border: 1px solid red;
                     width: 50%;
                     height: 100%;
                     background-color: ${colors.white};
-                    // opacity: 0.6;
-                    // border: 1px solid red;
                     padding: 10px;
-                    // position: relative;
                     z-index: 2;
                 }
 
                 .galleryInner {
-                    // border: 1px solid red;
-                    width: 81%;
                     justify-content: center;
                     flex-flow: row wrap;
                     align-items: center;
                     align-content: center;
 
-                    h2 {
-                        font-family: ${fonts.test4};
-                        font-size: 60px;
-                        color: ${colors.black};
-                        margin-bottom: 60px;
-                        text-align: center;
-                    }
+                    ${media.desktop} { width: 70%; }
+                    ${media.largeDt} { width: 78%; }
+
+                    // h2 {
+                    //     font-family: ${fonts.test4};
+                    //     font-size: 60px;
+                    //     color: ${colors.black};
+                    //     margin-bottom: 60px;
+                    //     text-align: center;
+                    // }
 
                     .p_imgs {
-                        max-width: 150px;
-                        height: 200px;
-                        // border: 1px solid red;
+                        max-width: 100px;
+                        max-height: 150px;
                         margin: 8px;
-                        opacity: 0.7;
-                        // z-index: 1;
+                        opacity: 0.8;
+
+                        ${media.largeDt} {
+                            width: 150px;
+                            height: 200px;
+                        }
+
+                        ${media.modern} {
+                            max-width: 150px;
+                            max-height: 220px;
+                        }
 
                         &:hover {
                             opacity: 1;
+                            cursor: pointer;
                         }
                     }
                 }
