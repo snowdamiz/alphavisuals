@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ProfileIMG from '../../../assets/bryan/profileIMG.jpg';
+import nextBtn from '../../../assets/nextBtn.svg';
 import { colors, fonts, media } from '../../../variables';
 
 export const BryanWrap = styled.div`
@@ -70,6 +71,7 @@ export const BryanWrap = styled.div`
             line-height: 23px;
             text-align: center;
             font-weight: 400;
+            margin-bottom: 20px;
             
             ${media.desktop} { 
                 width: 450px;
@@ -86,14 +88,14 @@ export const BryanWrap = styled.div`
 
         button {
             font-family: ${fonts.primary};
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             border: 3px solid ${colors.white};
             background: transparent;
             color: ${colors.white};
             width: 120px;
             height: 38px;
-            margin-top: 20px;
+            margin-top: 12px;
 
             &:hover {
                 background-color: ${colors.white};
@@ -103,8 +105,12 @@ export const BryanWrap = styled.div`
             // ${media.desktop} { display: none; }
         }
 
+        .viewGallery {
+            ${media.desktop} { display: none; }
+        }
+
         .profileNav {
-            margin-top: 50px;
+            margin-top: 20px;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
@@ -116,10 +122,22 @@ export const BryanWrap = styled.div`
                 border: 2px solid ${colors.white};
                 background-color: ${colors.white};
                 border-radius: 50%;
-                // position: absolute;
                 width: 50px;
                 height: 50px;
                 margin-top: 10px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                img.prev { margin-top: -4px; }
+                img.next { margin-top: 4px; }
+
             }
         }
     }
@@ -159,7 +177,7 @@ export const BryanWrap = styled.div`
 
             .p_imgs {
                 max-width: 100px;
-                max-height: 150px;
+                max-height: 140px;
                 margin: 8px;
                 opacity: 0.8;
 

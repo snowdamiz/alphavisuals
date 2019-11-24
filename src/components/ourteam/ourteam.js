@@ -5,15 +5,19 @@ import { OurteamWrap } from './ourteamStyles';
 
 function Ourteam () {
     const [bryanText, setBryanText] = useState(0);
+    const [bryanGallery, setBryanGallery] = useState(0);
 
-    const expandText = () => {
-        setBryanText(!bryanText);
-    }
+    const expandBryanText = () => setBryanText(!bryanText)
+    const expandBryanGallery = () => setBryanGallery(!bryanGallery)
 
     return (
         <OurteamWrap id="ourteam">
             <div className="inner">
-                <Bryan expandText={expandText} bryanText={bryanText} />
+                <Bryan
+                    expandBryanText={expandBryanText}
+                    expandBryanGallery={expandBryanGallery}
+                    bryanGallery={bryanGallery}
+                    bryanText={bryanText} />
             </div>
         </OurteamWrap>
     )

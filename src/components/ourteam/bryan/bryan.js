@@ -11,7 +11,12 @@ import IMG7 from '../../../assets/bryan/IMG7.JPG';
 import IMG8 from '../../../assets/bryan/IMG8.JPG';
 import IMG9 from '../../../assets/bryan/IMG9.JPG';
 import IMG10 from '../../../assets/bryan/IMG10.JPG';
+import IMG11 from '../../../assets/bryan/IMG11.JPG';
+import IMG12 from '../../../assets/bryan/IMG12.JPG';
+import NextBtn from '../../../assets/nextBtn.svg';
+import PrevBtn from '../../../assets/prevBtn.svg';
 import { BryanWrap } from './bryanStyles';
+import BryanGallery from './bryanGallery';
 
 function Bryan (props) {
     const images = [
@@ -25,6 +30,8 @@ function Bryan (props) {
         { id: 8, img: IMG8 },
         { id: 9, img: IMG9 },
         { id: 10, img: IMG10 },
+        { id: 11, img: IMG11 },
+        { id: 12, img: IMG12 },
     ]
 
     return (
@@ -34,35 +41,39 @@ function Bryan (props) {
                 <h2>Bryan</h2>
                 <p>My name is Bryan loop. I grew up in Portland Oregon. I started 
                     doing photography back in 2009 when I was in high school. From 
-                    there I graduated in 2011 from Benson Polytechnic. I never thought 
-                    that I would keep doing photography from that point because I came 
-                    from a low income house hold that could not afford equipment ...
+                    there I graduated in 2011 from Benson Polytechnic. I would describe my 
+                    photography to be clean and creative.
                     {props.bryanText ? (
                         <span>
-                            I finally was able to buy my own camera in 2015 it was a cheap Nikon 
-                            d5300 which was great at the time.
-                            I had that until I was asked to start doing weddings as a secondary 
-                            shooter in 2018 which is when I got the camera I am using now a Nikon 
-                            D750. I would describe my photography to be clean and creative. I am 
-                            quick to adapt to lighting. With all that I have learned I will let my work 
+                            I am quick to adapt to lighting. With all that I have learned I will let my work 
                             say the rest! I look forward to getting to know you now!”
                         </span>
                     ) : null }
                 </p>
-                <button onClick={props.expandText}>{props.bryanText ? "Close" : "Learn More"}</button>
+                <button onClick={props.expandBryanText}>{props.bryanText ? "Close" : "Learn More"}</button>
+                <button onClick={props.expandBryanGallery} className="viewGallery">View Gallery</button>
                 <div className="profileNav">
-                    <Link smooth to="/#home" className="nextBtn"></Link>
+                    <Link smooth to="/#home" className="nextBtn">
+                        <img src={PrevBtn} className="prev" />
+                    </Link>
+                    <Link smooth to="/#contact" className="nextBtn">
+                        <img src={NextBtn} className="next" />
+                    </Link>
                 </div>
             </div>
             <div className="bryanGallery">
                 <div className="galleryInner">
                     {images.map((el, key) => {
-                        return (
-                            <img src={el.img} key={el.id} className="p_imgs"></img>
-                        )
+                        return <img src={el.img} key={el.id} className="p_imgs"></img>
                     })}
                 </div>
             </div>
+            {props.bryanGallery ? (
+                <BryanGallery
+                    images={images}
+                    bryanGallery={props.bryanGallery}
+                    expandBryanGallery={props.expandBryanGallery} />
+            ) : null }
         </BryanWrap>
     )
 }
