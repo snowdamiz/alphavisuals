@@ -9,7 +9,7 @@ export const BryanWrap = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 42px;
+    padding: 0 30px;
     height: 100vh;
 
     ${media.largeMb} { width: 480px; }
