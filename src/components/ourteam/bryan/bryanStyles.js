@@ -32,13 +32,18 @@ export const BryanWrap = styled.div`
         }
 
         .image {
-            width: 150px;
-            height: 150px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             border: 3px solid ${colors.white};
             background-color: ${colors.white};
             background: url(${ProfileIMG});
             background-size: cover;
+
+            ${media.tablet} {
+                width: 150px;
+                height: 150px;
+            }
 
             ${media.largeTb} {
                 width: 170px;
@@ -56,7 +61,7 @@ export const BryanWrap = styled.div`
             font-family: ${fonts.test4};
             font-size: 50px;
             color: ${colors.white};
-            margin: 50px 0 25px 0;
+            margin: 40px 0 25px 0;
 
             ${media.desktop} {
                 font-size: 70px;
@@ -72,10 +77,15 @@ export const BryanWrap = styled.div`
             text-align: center;
             font-weight: 400;
             margin-bottom: 20px;
+            font-size: 15px;
             
             ${media.desktop} { 
                 width: 450px;
                 line-height: 26px;
+            }
+
+            ${media.tablet} {
+                font-size: 16px;
             }
 
             .hidden {
@@ -122,17 +132,27 @@ export const BryanWrap = styled.div`
                 border: 2px solid ${colors.white};
                 background-color: ${colors.white};
                 border-radius: 50%;
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
                 margin-top: 10px;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
 
+                ${media.tablet} {
+                    width: 50px;
+                    height: 50px;
+                }
+
                 img {
-                    width: 28px;
-                    height: 28px;
+                    width: 24px;
+                    height: 24px;
+
+                    ${media.tablet} {
+                        width: 28px;
+                        height: 28px;
+                    }
                 }
 
                 img.prev { margin-top: -4px; }

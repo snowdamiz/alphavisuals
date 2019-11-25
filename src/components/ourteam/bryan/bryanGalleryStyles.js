@@ -42,8 +42,8 @@ export const BryanGalleryWrap = styled.div`
         align-items: center;
         align-content: center;
         // border: 1px solid red;
-        width: 290px;
-        margin-top: 30px;
+        width: 300px;
+        margin-top: 10px;
 
         // ${media.mobile} {
         //     width: 350px;
@@ -71,7 +71,7 @@ export const BryanGalleryWrap = styled.div`
 
         .p_imgs {
             max-width: 80px;
-            max-height: 130px;
+            max-height: 120px;
             margin: 8px;
             opacity: 0.8;
 
