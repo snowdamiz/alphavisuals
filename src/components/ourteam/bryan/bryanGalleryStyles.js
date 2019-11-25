@@ -129,7 +129,7 @@ export const ImgView = styled.div`
 
     .img {
         max-width: 100%;
-        max-height: 500px;
+        max-height: 480px;
         // margin-top: 40px;
         padding: 20px;
 
