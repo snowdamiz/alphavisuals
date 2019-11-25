@@ -29,9 +29,9 @@ function Bryan (props) {
         { id: 6, img: IMG6 },
         { id: 8, img: IMG8 },
         { id: 9, img: IMG9 },
-        { id: 10, img: IMG10 },
-        { id: 11, img: IMG11 },
-        { id: 12, img: IMG12 },
+        // { id: 10, img: IMG10 },
+        // { id: 11, img: IMG11 },
+        // { id: 12, img: IMG12 },
     ]
 
     return (
