@@ -9,13 +9,9 @@ function BryanGallery (props) {
     const expandImg = (img) => {
         setImgSize(1);
         setImg(img);
-        console.log(imgSize)
-        console.log(img);
     }
 
-    const closeImg = () => {
-        setImg(null);
-    }
+    const closeImg = () => setImg(null)
 
     return (
         <BryanGalleryWrap>

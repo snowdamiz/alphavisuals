@@ -10,7 +10,9 @@ export const BryanWrap = styled.div`
     align-items: center;
     width: 100%;
     padding: 0 30px;
-    height: 100vh;
+    height: 97vh;
+
+    ${media.mobile} { height: 100vh; }
 
     ${media.largeMb} { width: 480px; }
 
