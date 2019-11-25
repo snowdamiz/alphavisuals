@@ -40,11 +40,11 @@ function Bryan (props) {
                 <div className="image"></div>
                 <h2>Bryan</h2>
                 <p>My name is Bryan loop. I grew up in Portland Oregon. I started 
-                    doing photography back in 2009 when I was in high school. From 
-                    there I graduated in 2011 from Benson Polytechnic. I would describe my 
-                    photography to be clean and creative.
+                    doing photography back in 2009 when I was in high school.
                     {props.bryanText ? (
                         <span>
+                            From there I graduated in 2011 from Benson Polytechnic. I would describe my 
+                            photography to be clean and creative.
                             I am quick to adapt to lighting. With all that I have learned I will let my work 
                             say the rest! I look forward to getting to know you now!”
                         </span>
