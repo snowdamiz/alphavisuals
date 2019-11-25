@@ -129,8 +129,16 @@ export const ImgView = styled.div`
 
     .img {
         max-width: 100%;
-        max-height: 600px;
+        max-height: 500px;
         // margin-top: 40px;
         padding: 20px;
+
+        ${media.mobile} {
+            max-height: 540px;
+        }
+
+        ${media.tablet} {
+            max-height: 600px;
+        }
     }
 `;
