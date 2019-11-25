@@ -3,7 +3,7 @@ import { colors, fonts, media } from '../../../variables';
 
 export const BryanGalleryWrap = styled.div`
     width: 90%;
-    height: 80%;
+    height: 85%;
     background-color: ${colors.white};
     position: absolute;
     display: flex;
