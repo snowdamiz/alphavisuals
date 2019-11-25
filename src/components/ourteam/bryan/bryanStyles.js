@@ -59,9 +59,11 @@ export const BryanWrap = styled.div`
 
         h2 {
             font-family: ${fonts.test4};
-            font-size: 50px;
+            font-size: 40px;
             color: ${colors.white};
             margin: 40px 0 25px 0;
+
+            ${media.tablet} { font-size: 50px; }
 
             ${media.desktop} {
                 font-size: 70px;
@@ -76,7 +78,7 @@ export const BryanWrap = styled.div`
             line-height: 23px;
             text-align: center;
             font-weight: 400;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 15px;
             
             ${media.desktop} { 
@@ -120,7 +122,7 @@ export const BryanWrap = styled.div`
         }
 
         .profileNav {
-            margin-top: 20px;
+            margin-top: 10px;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
