@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { colors, fonts, media } from '../../../variables';
 
 export const BryanGalleryWrap = styled.div`
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     background-color: ${colors.white};
     position: absolute;
     display: flex;
@@ -42,7 +42,7 @@ export const BryanGalleryWrap = styled.div`
         align-items: center;
         align-content: center;
         // border: 1px solid red;
-        width: 300px;
+        // width: 300px;
         margin-top: 10px;
 
         // ${media.mobile} {
@@ -70,8 +70,8 @@ export const BryanGalleryWrap = styled.div`
         // }
 
         .p_imgs {
-            max-width: 80px;
-            max-height: 120px;
+            max-width: 140px;
+            // max-height: 120px;
             margin: 8px;
             opacity: 0.8;
 
@@ -129,16 +129,16 @@ export const ImgView = styled.div`
 
     .img {
         max-width: 100%;
-        max-height: 480px;
+        max-height: 600px;
         // margin-top: 40px;
         padding: 20px;
 
         ${media.mobile} {
-            max-height: 540px;
+            max-height: 700px;
         }
 
         ${media.tablet} {
-            max-height: 600px;
+            max-height: 800px;
         }
     }
 `;

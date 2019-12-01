@@ -13,7 +13,6 @@ export const BryanWrap = styled.div`
     height: 97vh;
 
     ${media.mobile} { height: 100vh; }
-
     ${media.largeMb} { width: 480px; }
 
     ${media.desktop} {
@@ -29,9 +28,7 @@ export const BryanWrap = styled.div`
         justify-content: center;
         align-items: center;
 
-        ${media.desktop} {
-            width: 50%;
-        }
+        ${media.desktop} { width: 50%; }
 
         .image {
             width: 130px;
@@ -130,7 +127,7 @@ export const BryanWrap = styled.div`
             justify-content: center;
             align-items: center;
 
-            ${media.desktop} { display: none; }
+            // ${media.desktop} { display: none; }
 
             .nextBtn {
                 border: 2px solid ${colors.white};
