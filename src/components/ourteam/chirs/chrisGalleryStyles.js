@@ -71,15 +71,15 @@ export const ChrisGalleryWrap = styled.div`
 
         .p_imgs {
             max-width: 140px;
-            // max-height: 120px;
+            max-height: 120px;
             margin: 8px;
             opacity: 0.8;
             align-self: flex-start;
 
-            // ${media.mobile} {
-            //     max-width: 120px;
-            //     max-height: 160px;
-            // }
+            ${media.mobile} {
+                max-width: 120px;
+                max-height: 160px;
+            }
 
             ${media.largeDt} {
                 width: 150px;
