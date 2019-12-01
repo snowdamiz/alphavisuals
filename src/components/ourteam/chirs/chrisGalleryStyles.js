@@ -3,7 +3,7 @@ import { colors, fonts, media } from '../../../variables';
 
 export const ChrisGalleryWrap = styled.div`
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color: ${colors.white};
     position: absolute;
     display: flex;
