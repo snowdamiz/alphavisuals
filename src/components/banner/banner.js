@@ -10,18 +10,16 @@ import pt from '../../assets/pt.svg';
 function Banner() {
     return (
         <BannerWrap>
-            <h1>Alpha Visuals</h1>
-            <h2 className="slogan"> Northwest</h2>
-            {/* <div className="line"></div> */}
-            <div className="socials">
-                <img src={fb} />
-                <img src={ig} />
-                <img src={pt} />
-                <img src={tw} />
+            <div className="bannerInner">
+                <h1>Alpha Visuals</h1>
+                <h2 className="slogan"> Northwest</h2>
+                <div className="socials">
+                    <img src={fb} />
+                    <img src={ig} />
+                    <img src={pt} />
+                    <img src={tw} />
+                </div>
             </div>
-            {/* <div className="arrow">
-                <img src={arrow} />
-            </div> */}
         </BannerWrap>
     )
 }

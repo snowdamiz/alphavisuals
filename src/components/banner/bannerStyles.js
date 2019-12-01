@@ -11,11 +11,19 @@ export const BannerWrap = styled.div`
     background-position: center; 
     background-size: cover;
     z-index: -1;
+    // margin-top: -80px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    // margin-top: -80px;
+
+    .bannerInner {
+        margin-top: -40px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 
     h1 {
         color: white;
