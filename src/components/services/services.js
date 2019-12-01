@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ServicesWrap } from './servicesStyles';
 
 function Services () {
@@ -14,7 +15,7 @@ function Services () {
                         <p className="description"><span>Description: </span>Up to 15 edited photos of your vehicle.</p>
                     </div>
                     <div className="service_cta">
-                        <button>Set Appointment</button>
+                        <Link to="/appointment" className="button">Set Appointment</Link>
                     </div>
                 </div>
 
@@ -27,7 +28,7 @@ function Services () {
                         <p className="description"><span>Description: </span>Three to six photos of up to 2 vehicle.</p>                                    
                     </div>
                     <div className="service_cta">
-                        <button>Set Appointment</button>
+                        <Link to="/appointment" className="button">Set Appointment</Link>
                     </div>
                 </div>
             </div>
@@ -43,7 +44,7 @@ function Services () {
                         <p className="description"><span>Description: </span>Up to 25 couples photos.</p>                                    
                     </div>
                     <div className="service_cta">
-                        <button>Set Appointment</button>
+                        <Link to="/appointment" className="button">Set Appointment</Link>
                     </div>
                 </div>
 
@@ -56,7 +57,7 @@ function Services () {
                         <p className="description"><span>Description: </span>Up to 30 engagement photos.</p>                 
                     </div>
                     <div className="service_cta">
-                        <button>Set Appointment</button>
+                        <Link to="/appointment" className="button">Set Appointment</Link>
                     </div>
                 </div>
             </div>
@@ -71,7 +72,7 @@ function Services () {
                         <p className="description"><span>Description: </span>Up to 10 photos of your vehicle.</p>
                     </div>
                     <div className="service_cta">
-                        <button>Set Appointment</button>
+                        <Link to="/appointment" className="button">Set Appointment</Link>
                     </div>
                 </div>
 
@@ -85,7 +86,7 @@ function Services () {
                         <p className="description"><span>Description: </span>Up to 15 photos of your vehicle.</p>                                        
                     </div>
                     <div className="service_cta">
-                        <button>Set Appointment</button>
+                        <Link to="/appointment" className="button">Set Appointment</Link>
                     </div>
                 </div>
             </div>

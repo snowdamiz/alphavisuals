@@ -77,7 +77,7 @@ export const NavWrap = styled.div`
         background-color: white;
         height: 44px;
         // margin: 0 10px 0 0;
-        box-shadow: 0 0 30px black;
+        // box-shadow: 0 0 30px black;
         cursor: pointer;
 
         ${media.tablet} {

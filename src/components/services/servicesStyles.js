@@ -120,20 +120,22 @@ export const ServicesWrap = styled.div`
     
             .service_cta {
                 width: 100%;
+                margin-top: 20px;
                 // border: 1px solid green;
                 // text-align: center;
     
-                button:nth-of-type(1) {
+                .button:nth-of-type(1) {
                     border: 2px solid #414141;
                     background-color: transparent;
                     padding: 8px 12px;
-                    margin-top: 20px;
                     font-size: 16px;
                     font-family: ${fonts.primary};
                     font-weight: 500;
+                    color: ${colors.black};
+                    text-decoration: none;
                 }
     
-                button:nth-of-type(2) {
+                .button:nth-of-type(2) {
                     border: none;
                     background-color: transparent;
                     padding: 8px 12px;

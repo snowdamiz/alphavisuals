@@ -9,16 +9,18 @@ import Services from './components/services/services';
 import Contact from './components/contact/contact';
 import Gallery from './components/gallery/gallery';
 import Ourteam from './components/ourteam/ourteam';
+import Purchase from './components/purchase/purchase';
 
 function App() {
   return (
     <AppWrap>
-      <Route path="/" component={Navigation} id="home" />
+      <Route exact path="/" component={Navigation} id="home" />
       <Route exact path="/" component={Banner} />
       <Route exact path="/" component={Services} id="services" />
       <Route exact path="/" component={Ourteam} id="ourteam" />
       <Route exact path="/" component={Gallery} id="gallery" />
       <Route exact path="/" component={Contact} id="contact" />
+      <Route exact path="/appointment" component={Purchase} />
     </AppWrap>
   );
 }
