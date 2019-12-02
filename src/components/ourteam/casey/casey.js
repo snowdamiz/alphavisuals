@@ -35,15 +35,20 @@ function Casey (props) {
             <div className="profile">
                 <div className="image"></div>
                 <h2>Casey</h2>
-                <p>Hey! My name is Chris. I grew up in sunny San Diego and
-                    moved up here to the PNW about 4 years ago. Car culture has 
-                    always been a part of my life.
+                <p>Hello, my names Casey! I'm from Mcminnville, Oregon. I was born and 
+                    raised here in the PNW, and have had plenty of time to explore the 
+                    Northwest. Photography for me personally, is a way to express how I 
+                    feel, to allow me to explore the west coast, and meet locals along 
+                    the way.
                     {props.caseyText ? (
                         <span>
-                            So simply put, I’m a car 
-                            enthusiast with a camera. Cars aside, photography has been a 
-                            passion of mine since high school and shows no signs of stopping 
-                            anytime soon. 
+                            Photography is such a passion for me, and because of this, 
+                            I decided to start a photography company. Not just any company, but
+                            one that strives to exceed every requirement you have, for whatever 
+                            photoshoot idea you want. Not only do we offer amazing photographers 
+                            here local to the Northwest, but ones that are determined to create 
+                            amazing works of art, and a friendship at the end. I guarantee an 
+                            amazing experience, and I can't wait to work with you!
                         </span>
                     ) : null }
                 </p>
