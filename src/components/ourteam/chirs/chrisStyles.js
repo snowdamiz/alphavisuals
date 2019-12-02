@@ -208,8 +208,8 @@ export const ChrisWrap = styled.div`
                 }
 
                 ${media.modern} {
-                    max-width: 140px;
-                    max-height: 220px;
+                    max-width: 300px;
+                    // max-height: 220px;
                 }
 
                 &:hover {
