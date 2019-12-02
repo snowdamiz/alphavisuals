@@ -16,7 +16,7 @@ function ChrisGallery (props) {
     return (
         <ChrisGalleryWrap>
             <div className="galleryHeading">
-                <h2>Bryan's Gallery</h2>
+                <h2>Chris's Gallery</h2>
                 <img src={Close} onClick={props.expandChrisGallery} />
             </div>
             <div className="galleryInner">
