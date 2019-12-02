@@ -4,7 +4,7 @@ import { ServicesWrap } from './servicesStyles';
 
 function Services () {
     return (
-        <ServicesWrap id="services">
+        <ServicesWrap>
             <div className="service_sec">
                 <div className="service">
                     <div className="service_content">
