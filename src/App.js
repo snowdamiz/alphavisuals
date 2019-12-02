@@ -5,6 +5,7 @@ import './index.css';
 import { AppWrap } from './appStyles';
 import Navigation from './components/navigation/navigation';
 import Banner from './components/banner/banner';
+import BlackFriday from './components/blackfriday/blackfriday';
 import Services from './components/services/services';
 import Contact from './components/contact/contact';
 import Gallery from './components/gallery/gallery';
@@ -16,10 +17,11 @@ function App() {
     <AppWrap>
       <Route exact path="/" component={Navigation} id="home" />
       <Route exact path="/" component={Banner} />
+      <Route exact path="/" component={BlackFriday} />
       <Route exact path="/" component={Services} id="services" />
       <Route exact path="/" component={Ourteam} id="ourteam" />
-      <Route exact path="/" component={Gallery} id="gallery" />
-      <Route exact path="/" component={Contact} id="contact" />
+      {/* <Route exact path="/" component={Gallery} id="gallery" /> */}
+      {/* <Route exact path="/" component={Contact} id="contact" /> */}
       <Route exact path="/appointment" component={Purchase} />
     </AppWrap>
   );
