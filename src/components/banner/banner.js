@@ -14,10 +14,12 @@ function Banner() {
                 <h1>Alpha Visuals</h1>
                 <h2 className="slogan"> Northwest</h2>
                 <div className="socials">
-                    <img src={fb} />
-                    <img src={ig} />
-                    <img src={pt} />
-                    <img src={tw} />
+                    <a href="https://www.facebook.com/alphavnw" target="_blank">
+                        <img src={fb} />
+                    </a>
+                    <a href="https://www.instagram.com/alphavisuals.nw/" target="_blank">
+                        <img src={ig} />
+                    </a>
                 </div>
             </div>
         </BannerWrap>
