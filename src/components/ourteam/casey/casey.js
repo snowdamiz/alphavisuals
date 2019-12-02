@@ -74,7 +74,7 @@ function Casey (props) {
                 <CaseyGallery
                     images={images}
                     chrisGallery={props.caseyGallery}
-                    expandChrisGallery={props.expandCaseyGallery} />
+                    expandCaseyGallery={props.expandCaseyGallery} />
             ) : null }
         </CaseyWrap>
     )
