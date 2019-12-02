@@ -127,8 +127,8 @@ export const PurchaseWrap = styled.div`
                 ${media.mobile} { width: 320px; }
                 ${media.largeMb} { width: 340px; min-height: 200px; }
                 ${media.tablet} { width: 400px; min-height: 220px; }
-                ${media.largeTb} { width: 500px; min-height: 240px; }
-                ${media.desktop} { width: 500px; min-height: 250px; }
+                ${media.largeTb} { width: 500px; }
+                ${media.desktop} { width: 500px; }
             }
 
             .btns {
