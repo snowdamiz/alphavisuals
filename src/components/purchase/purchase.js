@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { PurchaseWrap } from './purchaseStyles';
+import StripeCheckout from 'react-stripe-checkout';
+import Axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import history from '../../history';
+
+toast.configure();
 
 function Purchase () {
     const [name, setName] = useState(null);
@@ -11,6 +18,7 @@ function Purchase () {
     const [comment, setComment] = useState(null);
     const [price, setPrice] = useState(0);
     const [time, setTime] = useState(null);
+    const [redirect, setRedirect] = useState(false);
 
     const handleName = (e) => setName(e.target.value);
     const handlePhone = (e) => setPhone(e.target.value);
@@ -29,6 +37,32 @@ function Purchase () {
         if (e.target.value === "engagementshoot") setPrice(150) 
         if (e.target.value === "carprofileshoot") setPrice(100) 
         if (e.target.value === "carclubshoot") setPrice(100) 
+    }
+
+    async function handleToken (token) {
+        let product = {
+            name: name,
+            phone: phone,
+            email: email,
+            shoot: shoot,
+            photographer: photographer,
+            comment: comment,
+            price: price,
+            time: time
+        }
+
+        const response = await Axios.post('http://localhost:5000/checkout', {
+            token,
+            product
+        });
+
+        const { status } = response.data;
+        if (status === "success") {
+            toast('Success! Check email for details', { type: 'success' })
+            history.push('/');
+        } else {
+            toast('Something went wrong', { type: 'error' })
+        }
     }
 
     return (
@@ -60,6 +94,12 @@ function Purchase () {
                     <textarea type="text" onChange={handleComment} />
                     <div className="btns">
                         <Link to="/" className="back">Back</Link>
+                        <StripeCheckout 
+                            stripeKey="pk_test_eEz0rYKkWOWGHnE40nEDEucP00HIFzhAy0"
+                            token={handleToken}
+                            billingAddress
+                            amount={price * 100}
+                            name={shoot} />
                         {/* <button>Purchase</button> */}
                     </div>
                 </div>
