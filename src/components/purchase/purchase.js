@@ -18,7 +18,6 @@ function Purchase () {
     const [comment, setComment] = useState(null);
     const [price, setPrice] = useState(0);
     const [time, setTime] = useState(null);
-    const [redirect, setRedirect] = useState(false);
 
     const handleName = (e) => setName(e.target.value);
     const handlePhone = (e) => setPhone(e.target.value);
@@ -51,10 +50,7 @@ function Purchase () {
             time: time
         }
 
-        const response = await Axios.post('http://localhost:5000/checkout', {
-            token,
-            product
-        });
+        const response = await Axios.post('http://localhost:5000/checkout', { token, product });
 
         const { status } = response.data;
         if (status === "success") {
@@ -62,6 +58,7 @@ function Purchase () {
             history.push('/');
         } else {
             toast('Something went wrong', { type: 'error' })
+            history.push('/');
         }
     }
 
@@ -94,7 +91,8 @@ function Purchase () {
                     <textarea type="text" onChange={handleComment} />
                     <div className="btns">
                         <Link to="/" className="back">Back</Link>
-                        <StripeCheckout 
+                        <StripeCheckout
+                            className="stripeBtn"
                             stripeKey="pk_test_eEz0rYKkWOWGHnE40nEDEucP00HIFzhAy0"
                             token={handleToken}
                             billingAddress

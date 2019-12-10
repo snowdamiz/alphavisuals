@@ -135,28 +135,54 @@ export const PurchaseWrap = styled.div`
                 // border: 1px solid red;
                 width: 100%;
                 margin-top: 20px;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: flex-start;
 
                 .back {
                     padding: 10px 30px;
+                    width: 120px;
                     text-decoration: none;
-                    border: 2px solid ${colors.white};
+                    border: 3px solid ${colors.white};
                     color: ${colors.white};
                     background-color: transparent;
                     text-align: center;
                     font-family: ${fonts.primary};
+                    margin-right: 10px;
                     &:hover {
                         background-color: ${colors.white};
                         color: ${colors.black};
                     }
-                    ${media.mobile} { padding: 10px 35px; }
-                    ${media.largeMb} { padding: 10px 40px; }
+                    // ${media.mobile} { padding: 10px 35px; }
+                    // ${media.largeMb} { padding: 10px 40px; }
                     ${media.tablet} {
-                        padding: 10px 45px;
+                        // padding: 10px 45px;
                         border: 3px solid ${colors.white};
                         font-size: 18px;
                     }
-                    ${media.largeTb} { padding: 10px 70px; }
+                    // ${media.largeTb} { padding: 10px 70px; }
 
+                }
+
+                .stripeBtn {
+                    border: 3px solid ${colors.primary} !important;
+                    margin-left: 20px !important;
+                    font-family: ${fonts.primary} !important;
+                }
+
+                .stripeBtn,
+                .stripeBtn>span {
+                    margin-top: -3px !important;
+                    border-radius: 0px !important;
+                    // border: 3px solid ${colors.white} !important;
+                    background-color: ${colors.primary} !important;
+                    background-image: none !important;
+                    font-family: ${fonts.primary} !important;
+                    width: 120px;
+                    height: 53px;
+                    margin: 0px !important;
+                    box-shadow: none !important;
                 }
             }
         }
