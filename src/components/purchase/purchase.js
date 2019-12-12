@@ -71,7 +71,7 @@ function Purchase () {
                         if (shoot) {
                             if (time) {
                                 Axios.post("https://alphavisuals.herokuapp.com/api/send", product);
-                                // history.push('/');
+                                setTimeout(() => history.push('/'), 3000);
                                 toast('Success! Your Request Has Been Submitted', { type: 'success' });
                             } else setErr("Please Enter Prefered Time")
                         } else setErr("Please Select Type of Shoot")
