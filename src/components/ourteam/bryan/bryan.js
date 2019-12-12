@@ -53,10 +53,10 @@ function Bryan (props) {
                 <button onClick={props.expandBryanText}>{props.bryanText ? "Close" : "Learn More"}</button>
                 <button onClick={props.expandBryanGallery} className="viewGallery">View Gallery</button>
                 <div className="profileNav">
-                    <Link smooth to="/#home" className="nextBtn">
+                    <Link smooth to="/#casey" className="nextBtn">
                         <img src={PrevBtn} className="prev" />
                     </Link>
-                    <Link smooth to="/#contact" className="nextBtn">
+                    <Link smooth to="/#chris" className="nextBtn">
                         <img src={NextBtn} className="next" />
                     </Link>
                 </div>

@@ -65,6 +65,12 @@ export const PurchaseWrap = styled.div`
             jusfity-content: center;
             align-items: center;
 
+            label {
+                font-family: ${fonts.primary};
+                font-size: 15px;
+                color: red;
+            }
+
             input {
                 // text-align: center;
                 // width :80%;
@@ -138,7 +144,7 @@ export const PurchaseWrap = styled.div`
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: center;
 
                 .back {
                     padding: 10px 30px;
@@ -149,41 +155,61 @@ export const PurchaseWrap = styled.div`
                     background-color: transparent;
                     text-align: center;
                     font-family: ${fonts.primary};
-                    margin-right: 10px;
+                    margin-right: 6px;
                     &:hover {
                         background-color: ${colors.white};
                         color: ${colors.black};
                     }
-                    // ${media.mobile} { padding: 10px 35px; }
-                    // ${media.largeMb} { padding: 10px 40px; }
+
                     ${media.tablet} {
                         // padding: 10px 45px;
                         border: 3px solid ${colors.white};
                         font-size: 18px;
                     }
-                    // ${media.largeTb} { padding: 10px 70px; }
 
                 }
 
-                .stripeBtn {
-                    border: 3px solid ${colors.primary} !important;
-                    margin-left: 20px !important;
-                    font-family: ${fonts.primary} !important;
-                }
-
-                .stripeBtn,
-                .stripeBtn>span {
-                    margin-top: -3px !important;
-                    border-radius: 0px !important;
-                    // border: 3px solid ${colors.white} !important;
-                    background-color: ${colors.primary} !important;
-                    background-image: none !important;
-                    font-family: ${fonts.primary} !important;
+                .submit {
+                    padding: 13px 30px;
                     width: 120px;
-                    height: 53px;
-                    margin: 0px !important;
-                    box-shadow: none !important;
+                    text-decoration: none;
+                    border: 3px solid ${colors.white};
+                    color: ${colors.white};
+                    background-color: transparent;
+                    text-align: center;
+                    font-family: ${fonts.primary};
+                    margin-left: 6px;
+                    &:hover {
+                        background-color: ${colors.white};
+                        color: ${colors.black};
+                    }
+                    
+                    ${media.tablet} {
+                        // padding: 10px 45px;
+                        border: 3px solid ${colors.white};
+                        font-size: 18px;
+                    }
                 }
+
+                // .stripeBtn {
+                //     border: 3px solid ${colors.primary} !important;
+                //     margin-left: 20px !important;
+                //     font-family: ${fonts.primary} !important;
+                // }
+
+                // .stripeBtn,
+                // .stripeBtn>span {
+                //     margin-top: -3px !important;
+                //     border-radius: 0px !important;
+                //     // border: 3px solid ${colors.white} !important;
+                //     background-color: ${colors.primary} !important;
+                //     background-image: none !important;
+                //     font-family: ${fonts.primary} !important;
+                //     width: 120px;
+                //     height: 53px;
+                //     margin: 0px !important;
+                //     box-shadow: none !important;
+                // }
             }
         }
     }

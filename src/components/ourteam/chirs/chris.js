@@ -35,7 +35,7 @@ function Chris (props) {
     ]
 
     return (
-        <ChrisWrap>
+        <ChrisWrap id="chris">
             <div className="profile">
                 <div className="image"></div>
                 <h2>Chris</h2>
@@ -54,10 +54,10 @@ function Chris (props) {
                 <button onClick={props.expandChrisText}>{props.chrisText ? "Close" : "Learn More"}</button>
                 <button onClick={props.expandChrisGallery} className="viewGallery">View Gallery</button>
                 <div className="profileNav">
-                    <Link smooth to="/#home" className="nextBtn">
+                    <Link smooth to="/#bryan" className="nextBtn">
                         <img src={PrevBtn} className="prev" />
                     </Link>
-                    <Link smooth to="/#contact" className="nextBtn">
+                    <Link smooth to="/#jonny" className="nextBtn">
                         <img src={NextBtn} className="next" />
                     </Link>
                 </div>

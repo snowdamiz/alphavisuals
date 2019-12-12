@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { PurchaseWrap } from './purchaseStyles';
-import StripeCheckout from 'react-stripe-checkout';
+// import StripeCheckout from 'react-stripe-checkout';
 import Axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,7 +10,7 @@ import history from '../../history';
 toast.configure();
 
 function Purchase () {
-    const [name, setName] = useState(null);
+    const [name, setName] = useState("");
     const [phone, setPhone] = useState(null);
     const [email, setEmail] = useState(null);
     const [shoot, setShoot] = useState(null);
@@ -18,6 +18,7 @@ function Purchase () {
     const [comment, setComment] = useState(null);
     const [price, setPrice] = useState(0);
     const [time, setTime] = useState(null);
+    const [err, setErr] = useState(null);
 
     const handleName = (e) => setName(e.target.value);
     const handlePhone = (e) => setPhone(e.target.value);
@@ -38,7 +39,9 @@ function Purchase () {
         if (e.target.value === "carclubshoot") setPrice(100) 
     }
 
-    async function handleToken (token) {
+    function handleSubmit (e) {
+        e.preventDefault();
+
         let product = {
             name: name,
             phone: phone,
@@ -50,16 +53,45 @@ function Purchase () {
             time: time
         }
 
-        const response = await Axios.post('http://localhost:5000/checkout', { token, product });
+        function validate (product) {
+            const d = Object.keys(product).map(i => product[i]);
+            const name = d[0];
+            const phone = d[1];
+            const email = d[2];
+            const shoot = d[3];
+            const time = d[7];
 
-        const { status } = response.data;
-        if (status === "success") {
-            toast('Success! Check email for details', { type: 'success' })
-            history.push('/');
-        } else {
-            toast('Something went wrong', { type: 'error' })
-            history.push('/');
+            const regexLetters = /^[a-zA-Z\s]*$/;
+            const regexNumbers = /^\d+$/;
+            const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (regexLetters.test(name) && name.length > 5) {
+                if (regexNumbers.test(phone) && phone.length === 10) {
+                    if (regexEmail.test(email) && email.length > 7) {
+                        if (shoot) {
+                            if (time) {
+                                Axios.post("http://localhost:5000/api/send", product);
+                                history.push('/');
+                                toast('Success! Your Request Has Been Submitted', { type: 'success' });
+                            } else setErr("Please Enter Prefered Time")
+                        } else setErr("Please Select Type of Shoot")
+                    } else setErr("Please Enter Valid Email")
+                } else setErr("Please Enter Your Number")
+            } else setErr("Please Enter Your Name");
         }
+
+        validate(product);
+
+        // const response = await Axios.post('http://localhost:5000/checkout', { token, product });
+
+        // const { status } = response.data;
+        // if (status === "success") {
+        //     toast('Success! Check email for details', { type: 'success' })
+        //     history.push('/');
+        // } else {
+        //     toast('Something went wrong', { type: 'error' })
+        //     history.push('/');
+        // }
     }
 
     return (
@@ -67,15 +99,17 @@ function Purchase () {
             <div className="purchaseInner">
                 <h1>Set Your Appointment</h1>
                 <div className="form">
+                    {err ? <label>{err}</label> : null}
                     <input type="text" placeholder="Name" onChange={handleName}/>
                     <input type="text" placeholder="Email Address" onChange={handleEmail} />
                     <input type="text" placeholder="Phone Number" onChange={handlePhone} />
                     <input type="text" placeholder="Preferred Time" onChange={handleTime} />
                     <select name="photographers" onClick={handlePhotographer}>
                         <option value="pickaphotographer">Pick a photographer</option>
+                        <option value="casey">Casey</option>
                         <option value="bryan">Bryan</option>
-                        <option value="chris">chris</option>
-                        <option value="Casey">Casey</option>
+                        <option value="chris">Chris</option>
+                        <option value="jonny">Jonny</option>
                     </select>
                     <select name="typeofshoot" onClick={handleShoot}>
                         <option value="picktypeofshoot">Choose a photoshoot</option>
@@ -91,14 +125,14 @@ function Purchase () {
                     <textarea type="text" onChange={handleComment} />
                     <div className="btns">
                         <Link to="/" className="back">Back</Link>
-                        <StripeCheckout
+                        <button className="submit" onClick={handleSubmit}>Submit</button>
+                        {/* <StripeCheckout
                             className="stripeBtn"
                             stripeKey="pk_test_eEz0rYKkWOWGHnE40nEDEucP00HIFzhAy0"
                             token={handleToken}
                             billingAddress
                             amount={price * 100}
-                            name={shoot} />
-                        {/* <button>Purchase</button> */}
+                            name={shoot} /> */}
                     </div>
                 </div>
             </div>

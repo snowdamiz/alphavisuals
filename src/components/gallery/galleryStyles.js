@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { fonts, colors, media } from '../../variables';
 
-import placeholder from '../../assets/placeholder.jpg';
+// import placeholder from '../../assets/placeholder.jpg';
 
 export const GalleryWrap = styled.div`
     width: 100%;
@@ -54,7 +54,6 @@ export const GalleryWrap = styled.div`
             height: 90%;
             // border: 1px solid blue;
             cursor: pointer;
-            background: url('${placeholder}');
             background-size: cover;
 
             &:hover {

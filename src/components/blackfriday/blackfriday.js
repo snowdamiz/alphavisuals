@@ -5,7 +5,7 @@ import { BlackFridayWrap } from './blackFridayStyles';
 function BlackFriday () {
     return (
         <BlackFridayWrap id="services">
-            <h1>Black Friday Prices!</h1>
+            <h1>Holiday Prices!</h1>
             <Link to="/appointment" className="scheduleBtn"> Schedule</Link>
         </BlackFridayWrap>
     )

@@ -31,7 +31,7 @@ function Casey (props) {
     ]
 
     return (
-        <CaseyWrap>
+        <CaseyWrap id="casey">
             <div className="profile">
                 <div className="image"></div>
                 <h2>Casey</h2>
@@ -55,10 +55,10 @@ function Casey (props) {
                 <button onClick={props.expandCaseyText}>{props.caseyText ? "Close" : "Learn More"}</button>
                 <button onClick={props.expandCaseyGallery} className="viewGallery">View Gallery</button>
                 <div className="profileNav">
-                    <Link smooth to="/#home" className="nextBtn">
+                    <Link smooth to="/#services" className="nextBtn">
                         <img src={PrevBtn} className="prev" />
                     </Link>
-                    <Link smooth to="/#contact" className="nextBtn">
+                    <Link smooth to="/#bryan" className="nextBtn">
                         <img src={NextBtn} className="next" />
                     </Link>
                 </div>
@@ -73,7 +73,7 @@ function Casey (props) {
             {props.caseyGallery ? (
                 <CaseyGallery
                     images={images}
-                    chrisGallery={props.caseyGallery}
+                    caseyGallery={props.caseyGallery}
                     expandCaseyGallery={props.expandCaseyGallery} />
             ) : null }
         </CaseyWrap>
