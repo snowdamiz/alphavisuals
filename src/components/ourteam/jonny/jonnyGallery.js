@@ -20,7 +20,7 @@ function JonnyGallery (props) {
                 <img src={Close} onClick={props.expandJonnyGallery} />
             </div>
             <div className="galleryInner">
-                {props.images.map((el, key) => {
+                {props.largeImages.map((el, key) => {
                     return <img 
                                 src={el.img}
                                 key={el.id}

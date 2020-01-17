@@ -13,6 +13,19 @@ import chrisIMG_09 from '../../../assets/chris/chrisIMG_09_thumbnail.jpg';
 import chrisIMG_10 from '../../../assets/chris/chrisIMG_10_thumbnail.jpg';
 import chrisIMG_11 from '../../../assets/chris/chrisIMG_11_thumbnail.jpg';
 import chrisIMG_12 from '../../../assets/chris/chrisIMG_12_thumbnail.jpg';
+
+import chrisIMG_01_medium from '../../../assets/chris/chrisIMG_01_medium.jpg';
+import chrisIMG_02_medium from '../../../assets/chris/chrisIMG_02_medium.jpg';
+import chrisIMG_03_medium from '../../../assets/chris/chrisIMG_03_medium.jpg';
+import chrisIMG_04_medium from '../../../assets/chris/chrisIMG_04_medium.jpg';
+import chrisIMG_05_medium from '../../../assets/chris/chrisIMG_05_medium.jpg';
+import chrisIMG_06_medium from '../../../assets/chris/chrisIMG_06_medium.jpg';
+import chrisIMG_07_medium from '../../../assets/chris/chrisIMG_07_medium.jpg';
+import chrisIMG_08_medium from '../../../assets/chris/chrisIMG_08_medium.jpg';
+import chrisIMG_09_medium from '../../../assets/chris/chrisIMG_09_medium.jpg';
+import chrisIMG_10_medium from '../../../assets/chris/chrisIMG_10_medium.jpg';
+import chrisIMG_11_medium from '../../../assets/chris/chrisIMG_11_medium.jpg';
+import chrisIMG_12_medium from '../../../assets/chris/chrisIMG_12_medium.jpg';
 import NextBtn from '../../../assets/nextBtn.svg';
 import PrevBtn from '../../../assets/prevBtn.svg';
 import ChrisGallery from './chrisGallery';
@@ -32,6 +45,21 @@ function Chris (props) {
         {id: 10, img: chrisIMG_10},
         {id: 11, img: chrisIMG_11},
         {id: 12, img: chrisIMG_12},
+    ]
+
+    const largeImages = [
+        {id: 1, img: chrisIMG_01_medium},
+        {id: 2, img: chrisIMG_02_medium},
+        {id: 3, img: chrisIMG_03_medium},
+        {id: 4, img: chrisIMG_04_medium},
+        {id: 5, img: chrisIMG_05_medium},
+        {id: 6, img: chrisIMG_06_medium},
+        {id: 7, img: chrisIMG_07_medium},
+        {id: 8, img: chrisIMG_08_medium},
+        {id: 9, img: chrisIMG_09_medium},
+        {id: 10, img: chrisIMG_10_medium},
+        {id: 11, img: chrisIMG_11_medium},
+        {id: 12, img: chrisIMG_12_medium},
     ]
 
     return (
@@ -72,6 +100,7 @@ function Chris (props) {
             {props.chrisGallery ? (
                 <ChrisGallery
                     images={images}
+                    largeImages={largeImages}
                     chrisGallery={props.chrisGallery}
                     expandChrisGallery={props.expandChrisGallery} />
             ) : null }

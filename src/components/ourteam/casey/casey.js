@@ -11,6 +11,17 @@ import IMG_07 from '../../../assets/casey/IMG_07_thumbnail.jpg';
 import IMG_08 from '../../../assets/casey/IMG_08_thumbnail.jpg';
 import IMG_09 from '../../../assets/casey/IMG_09_thumbnail.jpg';
 import IMG_10 from '../../../assets/casey/IMG_10_thumbnail.jpg';
+
+import IMG_01_medium from '../../../assets/casey/IMG_01_medium.jpg';
+import IMG_02_medium from '../../../assets/casey/IMG_02_medium.jpg';
+import IMG_03_medium from '../../../assets/casey/IMG_03_medium.jpg';
+import IMG_04_medium from '../../../assets/casey/IMG_04_medium.jpg';
+import IMG_05_medium from '../../../assets/casey/IMG_05_medium.jpg';
+import IMG_06_medium from '../../../assets/casey/IMG_06_medium.jpg';
+import IMG_07_medium from '../../../assets/casey/IMG_07_medium.jpg';
+import IMG_08_medium from '../../../assets/casey/IMG_08_medium.jpg';
+import IMG_09_medium from '../../../assets/casey/IMG_09_medium.jpg';
+import IMG_10_medium from '../../../assets/casey/IMG_10_medium.jpg';
 import NextBtn from '../../../assets/nextBtn.svg';
 import PrevBtn from '../../../assets/prevBtn.svg';
 import CaseyGallery from './caseyGallery';
@@ -28,6 +39,19 @@ function Casey (props) {
         {id: 8, img: IMG_08},
         {id: 9, img: IMG_09},
         {id: 10, img: IMG_10}
+    ]
+
+    const largeImages = [
+        {id: 1, img: IMG_01_medium},
+        {id: 2, img: IMG_02_medium},
+        {id: 3, img: IMG_03_medium},
+        {id: 4, img: IMG_04_medium},
+        {id: 5, img: IMG_05_medium},
+        {id: 6, img: IMG_06_medium},
+        {id: 7, img: IMG_07_medium},
+        {id: 8, img: IMG_08_medium},
+        {id: 9, img: IMG_09_medium},
+        {id: 10, img: IMG_10_medium}
     ]
 
     return (
@@ -73,6 +97,7 @@ function Casey (props) {
             {props.caseyGallery ? (
                 <CaseyGallery
                     images={images}
+                    largeImages={largeImages}
                     caseyGallery={props.caseyGallery}
                     expandCaseyGallery={props.expandCaseyGallery} />
             ) : null }
