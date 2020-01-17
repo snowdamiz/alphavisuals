@@ -1,18 +1,31 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import IMG1 from '../../../assets/bryan/IMG1.JPG';
-import IMG2 from '../../../assets/bryan/IMG2.JPG';
-import IMG3 from '../../../assets/bryan/IMG3.JPG';
-import IMG4 from '../../../assets/bryan/IMG4.JPG';
-import IMG5 from '../../../assets/bryan/IMG5.JPG';
-import IMG6 from '../../../assets/bryan/IMG6.JPG';
-import IMG7 from '../../../assets/bryan/IMG7.JPG';
-import IMG8 from '../../../assets/bryan/IMG8.JPG';
-import IMG9 from '../../../assets/bryan/IMG9.JPG';
-import IMG10 from '../../../assets/bryan/IMG10.JPG';
-import IMG11 from '../../../assets/bryan/IMG11.JPG';
-import IMG12 from '../../../assets/bryan/IMG12.JPG';
+import IMG1 from '../../../assets/bryan/IMG1_thumbnail.jpg';
+import IMG2 from '../../../assets/bryan/IMG2_thumbnail.jpg';
+import IMG3 from '../../../assets/bryan/IMG3_thumbnail.jpg';
+import IMG4 from '../../../assets/bryan/IMG4_thumbnail.jpg';
+import IMG5 from '../../../assets/bryan/IMG5_thumbnail.jpg';
+import IMG6 from '../../../assets/bryan/IMG6_thumbnail.jpg';
+import IMG7 from '../../../assets/bryan/IMG7_thumbnail.jpg';
+import IMG8 from '../../../assets/bryan/IMG8_thumbnail.jpg';
+import IMG9 from '../../../assets/bryan/IMG9_thumbnail.jpg';
+import IMG10 from '../../../assets/bryan/IMG10_thumbnail.jpg';
+import IMG11 from '../../../assets/bryan/IMG11_thumbnail.jpg';
+import IMG12 from '../../../assets/bryan/IMG12_thumbnail.jpg';
+
+import IMG1_medium from '../../../assets/bryan/IMG1_medium.jpg';
+import IMG2_medium from '../../../assets/bryan/IMG2_medium.jpg';
+import IMG3_medium from '../../../assets/bryan/IMG3_medium.jpg';
+import IMG4_medium from '../../../assets/bryan/IMG4_medium.jpg';
+import IMG5_medium from '../../../assets/bryan/IMG5_medium.jpg';
+import IMG6_medium from '../../../assets/bryan/IMG6_medium.jpg';
+import IMG7_medium from '../../../assets/bryan/IMG7_medium.jpg';
+import IMG8_medium from '../../../assets/bryan/IMG8_medium.jpg';
+import IMG9_medium from '../../../assets/bryan/IMG9_medium.jpg';
+import IMG10_medium from '../../../assets/bryan/IMG10_medium.jpg';
+import IMG11_medium from '../../../assets/bryan/IMG11_medium.jpg';
+import IMG12_medium from '../../../assets/bryan/IMG12_medium.jpg';
 import NextBtn from '../../../assets/nextBtn.svg';
 import PrevBtn from '../../../assets/prevBtn.svg';
 import { BryanWrap } from './bryanStyles';
@@ -32,6 +45,18 @@ function Bryan (props) {
         // { id: 10, img: IMG10 },
         // { id: 11, img: IMG11 },
         // { id: 12, img: IMG12 },
+    ]
+
+    const largeImages = [
+        { id: 1, img: IMG1_medium },
+        { id: 2, img: IMG2_medium },
+        { id: 3, img: IMG3_medium },
+        { id: 4, img: IMG4_medium },
+        { id: 5, img: IMG5_medium },
+        { id: 7, img: IMG7_medium },
+        { id: 6, img: IMG6_medium },
+        { id: 8, img: IMG8_medium },
+        { id: 9, img: IMG9_medium },
     ]
 
     return (
@@ -71,6 +96,7 @@ function Bryan (props) {
             {props.bryanGallery ? (
                 <BryanGallery
                     images={images}
+                    largeImages={largeImages}
                     bryanGallery={props.bryanGallery}
                     expandBryanGallery={props.expandBryanGallery} />
             ) : null }

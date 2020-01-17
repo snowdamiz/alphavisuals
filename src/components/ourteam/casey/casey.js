@@ -1,16 +1,16 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import IMG_01 from '../../../assets/casey/IMG_01.jpg';
-import IMG_02 from '../../../assets/casey/IMG_02.jpg';
-import IMG_03 from '../../../assets/casey/IMG_03.jpg';
-import IMG_04 from '../../../assets/casey/IMG_04.jpg';
-import IMG_05 from '../../../assets/casey/IMG_05.jpg';
-import IMG_06 from '../../../assets/casey/IMG_06.jpg';
-import IMG_07 from '../../../assets/casey/IMG_07.jpg';
-import IMG_08 from '../../../assets/casey/IMG_08.jpg';
-import IMG_09 from '../../../assets/casey/IMG_09.jpg';
-import IMG_10 from '../../../assets/casey/IMG_10.jpg';
+import IMG_01 from '../../../assets/casey/IMG_01_thumbnail.jpg';
+import IMG_02 from '../../../assets/casey/IMG_02_thumbnail.jpg';
+import IMG_03 from '../../../assets/casey/IMG_03_thumbnail.jpg';
+import IMG_04 from '../../../assets/casey/IMG_04_thumbnail.jpg';
+import IMG_05 from '../../../assets/casey/IMG_05_thumbnail.jpg';
+import IMG_06 from '../../../assets/casey/IMG_06_thumbnail.jpg';
+import IMG_07 from '../../../assets/casey/IMG_07_thumbnail.jpg';
+import IMG_08 from '../../../assets/casey/IMG_08_thumbnail.jpg';
+import IMG_09 from '../../../assets/casey/IMG_09_thumbnail.jpg';
+import IMG_10 from '../../../assets/casey/IMG_10_thumbnail.jpg';
 import NextBtn from '../../../assets/nextBtn.svg';
 import PrevBtn from '../../../assets/prevBtn.svg';
 import CaseyGallery from './caseyGallery';
