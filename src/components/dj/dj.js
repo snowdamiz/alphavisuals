@@ -16,7 +16,7 @@ function Dj(props) {
             <div className="djCont">
                 <div className="djText">
                     <h1>Looking for a DJ?</h1>
-                    <p>We are now offering a complete <br /> DJ service Ft. DJ Rian Simpson</p>
+                    <p>We are now offering a complete <br /> DJ service Ft. DJ RainTree</p>
                     <button onClick={toggleFlyer}>{showFlyer ? 'Close' : 'Learn More'}</button>
                 </div>
                 <img src={DJIMG} />
