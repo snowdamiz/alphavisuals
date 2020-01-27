@@ -19,6 +19,7 @@ function Purchase () {
     const [price, setPrice] = useState(0);
     const [time, setTime] = useState(null);
     const [dj, setDj] = useState(null);
+    const [video, setVideo] = useState(null);
     const [err, setErr] = useState(null);
 
     const handleName = (e) => setName(e.target.value);
@@ -28,6 +29,7 @@ function Purchase () {
     const handlePhotographer = (e) => setPhotographer(e.target.value);
     const handleComment = (e) => setComment(e.target.value);
     const handleDj = (e) => setDj(e.target.value);
+    const handleVideo = (e) => setVideo(e.target.value);
 
     const handleShoot = (e) => {
         setShoot(e.target.value);
@@ -53,7 +55,8 @@ function Purchase () {
             comment: comment,
             price: price,
             time: time,
-            dj: dj
+            dj: dj,
+            video, video
         }
 
         function validate (product) {
@@ -124,6 +127,11 @@ function Purchase () {
                         <option value="engagementshoot">Engagement Shoot</option>
                         <option value="carprofileshoot">Car Profile Shoot</option>
                         <option value="carclubshoot">Car Club Shoot</option>
+                    </select>
+                    <select name="video" onClick={handleVideo}>
+                        <option value="video">Do you need a video?</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
                     </select>
                     <select name="dj" onClick={handleDj} >
                         <option value="dj">Do you need a DJ?</option>

@@ -161,7 +161,7 @@ export const DjWrap = styled.div`
         align-items: center;
 
         img {
-            width: 100%;
+            width: 96%;
             margin-bottom: 20px;
 
             ${media.tablet} {
