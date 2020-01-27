@@ -118,6 +118,16 @@ function Services () {
                     </div>
                 </div>
             </div>
+
+            <div className="service_sec">
+                <div className="service">
+                    <div className="service_content">
+                        <h1>Additional Services Inquiry</h1>
+                        <div className="line"></div>
+                        <p className="price" >Dont see the service you are looking for? For additional service inquiries send us an email at <span>casey@alphavnw.com</span></p>
+                     </div>
+                </div>
+            </div>
         </ServicesWrap>
     )
 }

@@ -14,7 +14,7 @@ export const ServicesWrap = styled.div`
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        &:nth-of-type(4) {
+        &:nth-of-type(5) {
             margin-bottom: 90px;
         }
 
