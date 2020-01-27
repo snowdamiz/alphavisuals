@@ -124,7 +124,7 @@ function Services () {
                     <div className="service_content">
                         <h1>Additional Services Inquiry</h1>
                         <div className="line"></div>
-                        <p className="price" >Dont see the service you are looking for? For additional service inquiries send us an email at <span>casey@alphavnw.com</span></p>
+                        <p className="price" >Dont see the service you are looking for? For additional service inquiries send us an email at <span><a href="mailto: casey@alphavnw.com">casey@alphavnw.com</a></span></p>
                      </div>
                 </div>
             </div>

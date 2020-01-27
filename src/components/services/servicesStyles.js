@@ -114,6 +114,10 @@ export const ServicesWrap = styled.div`
                     span {
                         font-weight: 500;
                         font-style: italic;
+
+                        a {
+                            color: ${colors.black};
+                        }
                     }
                 }
             }
