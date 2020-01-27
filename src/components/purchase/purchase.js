@@ -56,7 +56,7 @@ function Purchase () {
             price: price,
             time: time,
             dj: dj,
-            video, video
+            video: video
         }
 
         function validate (product) {
