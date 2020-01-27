@@ -18,6 +18,7 @@ function Purchase () {
     const [comment, setComment] = useState(null);
     const [price, setPrice] = useState(0);
     const [time, setTime] = useState(null);
+    const [dj, setDj] = useState(null);
     const [err, setErr] = useState(null);
 
     const handleName = (e) => setName(e.target.value);
@@ -26,6 +27,7 @@ function Purchase () {
     const handleTime = (e) => setTime(e.target.value);
     const handlePhotographer = (e) => setPhotographer(e.target.value);
     const handleComment = (e) => setComment(e.target.value);
+    const handleDj = (e) => setDj(e.target.value);
 
     const handleShoot = (e) => {
         setShoot(e.target.value);
@@ -50,7 +52,8 @@ function Purchase () {
             photographer: photographer,
             comment: comment,
             price: price,
-            time: time
+            time: time,
+            dj: dj
         }
 
         function validate (product) {
@@ -121,6 +124,11 @@ function Purchase () {
                         <option value="engagementshoot">Engagement Shoot</option>
                         <option value="carprofileshoot">Car Profile Shoot</option>
                         <option value="carclubshoot">Car Club Shoot</option>
+                    </select>
+                    <select name="dj" onClick={handleDj} >
+                        <option value="dj">Do you need a DJ?</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
                     </select>
                     <textarea type="text" onChange={handleComment} />
                     <div className="btns">
