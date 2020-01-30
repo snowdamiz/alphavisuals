@@ -76,7 +76,7 @@ function Purchase () {
                     if (regexEmail.test(email) && email.length > 7) {
                         if (shoot) {
                             if (time) {
-                                setTimeout(() => Axios.post("https://alphavisuals.herokuapp.com/api/send", product), 2000);
+                                Axios.post("https://alphavisuals.herokuapp.com/api/send", product);
                                 setTimeout(() => history.push('/'), 3000);
                                 toast('Success! Your Request Has Been Submitted', { type: 'success' });
                             } else setErr("Please Enter Prefered Time")
