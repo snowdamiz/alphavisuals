@@ -138,7 +138,7 @@ function Purchase () {
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select>
-                    <textarea type="text" onChange={handleComment} />
+                    <textarea type="text" placeholder="More Details, Car Type, Shoot Ideas, Etc." onChange={handleComment} />
                     <div className="btns">
                         <Link to="/" className="back">Back</Link>
                         <button className="submit" onClick={handleSubmit}>Submit</button>
