@@ -52,13 +52,13 @@ export const PurchaseWrap = styled.div`
             {
                 font-size: 54px;
                 line-height: 38px;
-                padding: 24px 0;
             }
 
         }
 
         .form {
-            margin-top: 50px;
+            margin-top: 40px;
+            margin-bottom: 40px;
             // border: 1px solid blue;
             display: flex;
             flex-flow: column nowrap;
