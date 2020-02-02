@@ -24,33 +24,32 @@ export const PurchaseWrap = styled.div`
 
         h1 {
             font-family: ${fonts.test3};
-            font-size: 40px;
+            font-size: 30px;
             color: ${colors.white};
             text-align: center;
             width: 300px;
             ${media.mobile} {
-                font-size: 44px; line-height:
-                28px;
+                font-size: 34px;
+                line-height: 28px;
                 padding: 5px 0;
             }
             ${media.largeMb} {
-                font-size: 46px;
+                font-size: 36px;
                 line-height: 30px;
                 padding: 10px 0;
             }
             ${media.tablet} {
-                font-size: 48px;
+                font-size: 38px;
                 line-height: 32px;
                 padding: 14px 0;
             }
             ${media.largeTb} {
-                font-size: 50px; 
+                font-size: 40px; 
                 line-height: 34px;
-                padding: 20px 0;
             }
             ${media.desktop}
             {
-                font-size: 54px;
+                font-size: 46px;
                 line-height: 38px;
             }
 
