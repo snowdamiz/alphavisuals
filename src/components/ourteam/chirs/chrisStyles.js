@@ -186,8 +186,7 @@ export const ChrisWrap = styled.div`
             align-content: center;
 
             ${media.desktop} { width: 70%; }
-            ${media.largeDt} { width: 80%; }
-            ${media.modern} { width: 90%; }
+            ${media.largeDt} { width: 78%; }
 
             // h2 {
             //     font-family: ${fonts.test4};
@@ -204,12 +203,13 @@ export const ChrisWrap = styled.div`
                 opacity: 0.8;
 
                 ${media.largeDt} {
-                    max-width: 160px;
+                    width: 150px;
+                    height: 200px;
                 }
 
                 ${media.modern} {
-                    max-width: 300px;
-                    // max-height: 220px;
+                    max-width: 150px;
+                    max-height: 220px;
                 }
 
                 &:hover {

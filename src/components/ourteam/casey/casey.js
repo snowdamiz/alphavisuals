@@ -1,27 +1,24 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import IMG_01 from '../../../assets/casey/IMG_01_thumbnail.jpg';
-import IMG_02 from '../../../assets/casey/IMG_02_thumbnail.jpg';
-import IMG_03 from '../../../assets/casey/IMG_03_thumbnail.jpg';
-import IMG_04 from '../../../assets/casey/IMG_04_thumbnail.jpg';
-import IMG_05 from '../../../assets/casey/IMG_05_thumbnail.jpg';
-import IMG_06 from '../../../assets/casey/IMG_06_thumbnail.jpg';
-import IMG_07 from '../../../assets/casey/IMG_07_thumbnail.jpg';
-import IMG_08 from '../../../assets/casey/IMG_08_thumbnail.jpg';
-import IMG_09 from '../../../assets/casey/IMG_09_thumbnail.jpg';
-import IMG_10 from '../../../assets/casey/IMG_10_thumbnail.jpg';
-
-import IMG_01_medium from '../../../assets/casey/IMG_01_medium.jpg';
-import IMG_02_medium from '../../../assets/casey/IMG_02_medium.jpg';
-import IMG_03_medium from '../../../assets/casey/IMG_03_medium.jpg';
-import IMG_04_medium from '../../../assets/casey/IMG_04_medium.jpg';
-import IMG_05_medium from '../../../assets/casey/IMG_05_medium.jpg';
-import IMG_06_medium from '../../../assets/casey/IMG_06_medium.jpg';
-import IMG_07_medium from '../../../assets/casey/IMG_07_medium.jpg';
-import IMG_08_medium from '../../../assets/casey/IMG_08_medium.jpg';
-import IMG_09_medium from '../../../assets/casey/IMG_09_medium.jpg';
-import IMG_10_medium from '../../../assets/casey/IMG_10_medium.jpg';
+import IMG1 from '../../../assets/casey/IMG1_thumbnail.jpg';
+import IMG2 from '../../../assets/casey/IMG2_thumbnail.jpg';
+import IMG3 from '../../../assets/casey/IMG3_thumbnail.jpg';
+import IMG4 from '../../../assets/casey/IMG4_thumbnail.jpg';
+import IMG5 from '../../../assets/casey/IMG5_thumbnail.jpg';
+import IMG6 from '../../../assets/casey/IMG6_thumbnail.jpg';
+import IMG7 from '../../../assets/casey/IMG7_thumbnail.jpg';
+import IMG8 from '../../../assets/casey/IMG8_thumbnail.jpg';
+import IMG9 from '../../../assets/casey/IMG9_thumbnail.jpg';
+import IMG1_medium from '../../../assets/casey/IMG1_medium.jpg';
+import IMG2_medium from '../../../assets/casey/IMG2_medium.jpg';
+import IMG3_medium from '../../../assets/casey/IMG3_medium.jpg';
+import IMG4_medium from '../../../assets/casey/IMG4_medium.jpg';
+import IMG5_medium from '../../../assets/casey/IMG5_medium.jpg';
+import IMG6_medium from '../../../assets/casey/IMG6_medium.jpg';
+import IMG7_medium from '../../../assets/casey/IMG7_medium.jpg';
+import IMG8_medium from '../../../assets/casey/IMG8_medium.jpg';
+import IMG9_medium from '../../../assets/casey/IMG9_medium.jpg';
 import NextBtn from '../../../assets/nextBtn.svg';
 import PrevBtn from '../../../assets/prevBtn.svg';
 import CaseyGallery from './caseyGallery';
@@ -29,29 +26,27 @@ import { CaseyWrap } from './caseyStyles';
 
 function Casey (props) {
     const images = [
-        {id: 1, img: IMG_01},
-        {id: 2, img: IMG_02},
-        {id: 3, img: IMG_03},
-        {id: 4, img: IMG_04},
-        {id: 5, img: IMG_05},
-        {id: 6, img: IMG_06},
-        {id: 7, img: IMG_07},
-        {id: 8, img: IMG_08},
-        {id: 9, img: IMG_09},
-        {id: 10, img: IMG_10}
+        {id: 1, img: IMG1},
+        {id: 2, img: IMG2},
+        {id: 3, img: IMG3},
+        {id: 4, img: IMG4},
+        {id: 5, img: IMG5},
+        {id: 6, img: IMG6},
+        {id: 7, img: IMG7},
+        {id: 8, img: IMG8},
+        {id: 9, img: IMG9}
     ]
 
     const largeImages = [
-        {id: 1, img: IMG_01_medium},
-        {id: 2, img: IMG_02_medium},
-        {id: 3, img: IMG_03_medium},
-        {id: 4, img: IMG_04_medium},
-        {id: 5, img: IMG_05_medium},
-        {id: 6, img: IMG_06_medium},
-        {id: 7, img: IMG_07_medium},
-        {id: 8, img: IMG_08_medium},
-        {id: 9, img: IMG_09_medium},
-        {id: 10, img: IMG_10_medium}
+        {id: 1, img: IMG1_medium},
+        {id: 2, img: IMG2_medium},
+        {id: 3, img: IMG3_medium},
+        {id: 4, img: IMG4_medium},
+        {id: 5, img: IMG5_medium},
+        {id: 6, img: IMG6_medium},
+        {id: 7, img: IMG7_medium},
+        {id: 8, img: IMG8_medium},
+        {id: 9, img: IMG9_medium}
     ]
 
     return (

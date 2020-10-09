@@ -10,9 +10,6 @@ import IMG6 from '../../../assets/bryan/IMG6_thumbnail.jpg';
 import IMG7 from '../../../assets/bryan/IMG7_thumbnail.jpg';
 import IMG8 from '../../../assets/bryan/IMG8_thumbnail.jpg';
 import IMG9 from '../../../assets/bryan/IMG9_thumbnail.jpg';
-import IMG10 from '../../../assets/bryan/IMG10_thumbnail.jpg';
-import IMG11 from '../../../assets/bryan/IMG11_thumbnail.jpg';
-import IMG12 from '../../../assets/bryan/IMG12_thumbnail.jpg';
 
 import IMG1_medium from '../../../assets/bryan/IMG1_medium.jpg';
 import IMG2_medium from '../../../assets/bryan/IMG2_medium.jpg';
@@ -23,9 +20,6 @@ import IMG6_medium from '../../../assets/bryan/IMG6_medium.jpg';
 import IMG7_medium from '../../../assets/bryan/IMG7_medium.jpg';
 import IMG8_medium from '../../../assets/bryan/IMG8_medium.jpg';
 import IMG9_medium from '../../../assets/bryan/IMG9_medium.jpg';
-import IMG10_medium from '../../../assets/bryan/IMG10_medium.jpg';
-import IMG11_medium from '../../../assets/bryan/IMG11_medium.jpg';
-import IMG12_medium from '../../../assets/bryan/IMG12_medium.jpg';
 import NextBtn from '../../../assets/nextBtn.svg';
 import PrevBtn from '../../../assets/prevBtn.svg';
 import { BryanWrap } from './bryanStyles';
@@ -42,9 +36,6 @@ function Bryan (props) {
         { id: 6, img: IMG6 },
         { id: 8, img: IMG8 },
         { id: 9, img: IMG9 },
-        // { id: 10, img: IMG10 },
-        // { id: 11, img: IMG11 },
-        // { id: 12, img: IMG12 },
     ]
 
     const largeImages = [
