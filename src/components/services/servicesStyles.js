@@ -81,7 +81,7 @@ export const ServicesWrap = styled.div`
                     width: 60px;
                     height: 4px;
                     border-radius: 2px;
-                    background-color: #00CFB2;
+                    background-color: #EB6123;
                     margin-top: 10px;
                 }
     
