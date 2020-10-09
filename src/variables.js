@@ -1,9 +1,10 @@
 export const colors = {
     white: '#ffffff',
-    primary: '#00C3BF',
+    primary: '#EB6123', //#00C3BF 00CFB2
     black: '#414141',
     gray: '#5B5B5B',
     lightGray: '#6E6E6E',
+    
 }
   
   export const fonts = {
