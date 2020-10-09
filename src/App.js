@@ -20,7 +20,7 @@ function App() {
       <Route exact path="/" component={Banner} />
       {/* <Route exact path="/" component={BlackFriday} id="services" /> */}
       <Route exact path="/" component={Services} />
-      <Route exact path="/" component={Dj} />
+      {/* <Route exact path="/" component={Dj} /> */}
       <Route exact path="/" component={Ourteam} />
       {/* <Route exact path="/" component={Gallery} id="gallery" /> */}
       {/* <Route exact path="/" component={Contact} id="contact" /> */}

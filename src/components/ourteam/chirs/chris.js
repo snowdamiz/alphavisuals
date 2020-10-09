@@ -1,31 +1,25 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import chrisIMG_01 from '../../../assets/chris/chrisIMG_01_thumbnail.jpg';
-import chrisIMG_02 from '../../../assets/chris/chrisIMG_02_thumbnail.jpg';
-import chrisIMG_03 from '../../../assets/chris/chrisIMG_03_thumbnail.jpg';
-import chrisIMG_04 from '../../../assets/chris/chrisIMG_04_thumbnail.jpg';
-import chrisIMG_05 from '../../../assets/chris/chrisIMG_05_thumbnail.jpg';
-import chrisIMG_06 from '../../../assets/chris/chrisIMG_06_thumbnail.jpg';
-import chrisIMG_07 from '../../../assets/chris/chrisIMG_07_thumbnail.jpg';
-import chrisIMG_08 from '../../../assets/chris/chrisIMG_08_thumbnail.jpg';
-import chrisIMG_09 from '../../../assets/chris/chrisIMG_09_thumbnail.jpg';
-import chrisIMG_10 from '../../../assets/chris/chrisIMG_10_thumbnail.jpg';
-import chrisIMG_11 from '../../../assets/chris/chrisIMG_11_thumbnail.jpg';
-import chrisIMG_12 from '../../../assets/chris/chrisIMG_12_thumbnail.jpg';
+import IMG1 from '../../../assets/chris/IMG1_thumbnail.jpg';
+import IMG2 from '../../../assets/chris/IMG2_thumbnail.jpg';
+import IMG3 from '../../../assets/chris/IMG3_thumbnail.jpg';
+import IMG4 from '../../../assets/chris/IMG4_thumbnail.jpg';
+import IMG5 from '../../../assets/chris/IMG5_thumbnail.jpg';
+import IMG6 from '../../../assets/chris/IMG6_thumbnail.jpg';
+import IMG7 from '../../../assets/chris/IMG7_thumbnail.jpg';
+import IMG8 from '../../../assets/chris/IMG8_thumbnail.jpg';
+import IMG9 from '../../../assets/chris/IMG9_thumbnail.jpg';
 
-import chrisIMG_01_medium from '../../../assets/chris/chrisIMG_01_medium.jpg';
-import chrisIMG_02_medium from '../../../assets/chris/chrisIMG_02_medium.jpg';
-import chrisIMG_03_medium from '../../../assets/chris/chrisIMG_03_medium.jpg';
-import chrisIMG_04_medium from '../../../assets/chris/chrisIMG_04_medium.jpg';
-import chrisIMG_05_medium from '../../../assets/chris/chrisIMG_05_medium.jpg';
-import chrisIMG_06_medium from '../../../assets/chris/chrisIMG_06_medium.jpg';
-import chrisIMG_07_medium from '../../../assets/chris/chrisIMG_07_medium.jpg';
-import chrisIMG_08_medium from '../../../assets/chris/chrisIMG_08_medium.jpg';
-import chrisIMG_09_medium from '../../../assets/chris/chrisIMG_09_medium.jpg';
-import chrisIMG_10_medium from '../../../assets/chris/chrisIMG_10_medium.jpg';
-import chrisIMG_11_medium from '../../../assets/chris/chrisIMG_11_medium.jpg';
-import chrisIMG_12_medium from '../../../assets/chris/chrisIMG_12_medium.jpg';
+import IMG1_medium from '../../../assets/chris/IMG1_medium.jpg';
+import IMG2_medium from '../../../assets/chris/IMG2_medium.jpg';
+import IMG3_medium from '../../../assets/chris/IMG3_medium.jpg';
+import IMG4_medium from '../../../assets/chris/IMG4_medium.jpg';
+import IMG5_medium from '../../../assets/chris/IMG5_medium.jpg';
+import IMG6_medium from '../../../assets/chris/IMG6_medium.jpg';
+import IMG7_medium from '../../../assets/chris/IMG7_medium.jpg';
+import IMG8_medium from '../../../assets/chris/IMG8_medium.jpg';
+import IMG9_medium from '../../../assets/chris/IMG9_medium.jpg';
 import NextBtn from '../../../assets/nextBtn.svg';
 import PrevBtn from '../../../assets/prevBtn.svg';
 import ChrisGallery from './chrisGallery';
@@ -33,33 +27,28 @@ import { ChrisWrap } from './chrisStyles';
 
 function Chris (props) {
     const images = [
-        {id: 1, img: chrisIMG_01},
-        {id: 2, img: chrisIMG_02},
-        {id: 3, img: chrisIMG_03},
-        {id: 4, img: chrisIMG_04},
-        {id: 5, img: chrisIMG_05},
-        {id: 6, img: chrisIMG_06},
-        {id: 7, img: chrisIMG_07},
-        {id: 8, img: chrisIMG_08},
-        {id: 9, img: chrisIMG_09},
-        {id: 10, img: chrisIMG_10},
-        {id: 11, img: chrisIMG_11},
-        {id: 12, img: chrisIMG_12},
+        {id: 1, img: IMG1},
+        {id: 2, img: IMG2},
+        {id: 3, img: IMG3},
+        {id: 4, img: IMG4},
+        {id: 5, img: IMG5},
+        {id: 6, img: IMG6},
+        {id: 7, img: IMG7},
+        {id: 8, img: IMG8},
+        {id: 9, img: IMG9},
     ]
 
     const largeImages = [
-        {id: 1, img: chrisIMG_01_medium},
-        {id: 2, img: chrisIMG_02_medium},
-        {id: 3, img: chrisIMG_03_medium},
-        {id: 4, img: chrisIMG_04_medium},
-        {id: 5, img: chrisIMG_05_medium},
-        {id: 6, img: chrisIMG_06_medium},
-        {id: 7, img: chrisIMG_07_medium},
-        {id: 8, img: chrisIMG_08_medium},
-        {id: 9, img: chrisIMG_09_medium},
-        {id: 10, img: chrisIMG_10_medium},
-        {id: 11, img: chrisIMG_11_medium},
-        {id: 12, img: chrisIMG_12_medium},
+        {id: 1, img: IMG1_medium},
+        {id: 2, img: IMG2_medium},
+        {id: 3, img: IMG3_medium},
+        {id: 4, img: IMG4_medium},
+        {id: 5, img: IMG5_medium},
+        {id: 6, img: IMG6_medium},
+        {id: 7, img: IMG7_medium},
+        {id: 8, img: IMG8_medium},
+        {id: 9, img: IMG9_medium},
+
     ]
 
     return (
